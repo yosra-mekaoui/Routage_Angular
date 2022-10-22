@@ -1,0 +1,13 @@
+ 
+<div *ngIf="ob.active == 'true'">
+ <p>idFacture:{{ob.id}}</p>
+ <p>montantFacture:{{ob.montantfac}}</p>
+ <p>montantRemise:{{ob.montantremi}}</p>
+ <p>dateFacture:{{ob.date}}</p>
+    <p>active{{ob.active}}</p>
+   </div>
+   <div *ngIf="ob.active == 'false'">
+      <h2>Impossible de visualiser les détails
+         de la facture</h2>
+   </div>
+   <button  (click)="navigate();" class="btn btn-success pull-right">Retour</button>

@@ -1,0 +1,9 @@
+ 
+ <!---->
+<div *ngFor="let a of list ;let indexp = index;" >
+    <div> Facture :{{ indexp}}<a [routerLink]="['/invoice', a.idFacture,a.active]" [queryParams]="{id:a.idFacture,
+        montantfac:a.montantFacture,montantremi:a.montantRemise,date:a.dateFacture,active:a.active}">Delais</a></div> 
+ 
+</div>
+
+
